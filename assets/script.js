@@ -10,20 +10,39 @@ var queryURL =
 
 //var for user input
 var city = $("#city").val();
+console.log(city);
 
 //API response
-$.ajax({
-  url: queryURL,
-  method: "GET",
-}).then(function (response) {
-  //$("#currentCity").text(JSON.stringify(response));
-  console.log(response);
-});
+// $.ajax({
+//   url: queryURL,
+//   method: "GET",
+// }).then(function (response) {
+//   //$("#currentCity").text(JSON.stringify(response));
+//   console.log(response);
+// });
 
-$("#search").on("click", function () {
-  //call function for adding entered city info to current city div
-  //call function for adding searched city as list item in aside
-});
+// $("#search").on("click", function () {
+//   //alert("working");
+
+//   //call function for adding entered city info to current city div
+
+//   //call function for adding searched city as list item in aside
+//   createSearchHistory();
+//   //call function for adding infor to local storage
+// });
+// function createSearchHistory() {
+//   //This will grab the user's city of choice
+//   var citySearch = $("#city").val();
+//   //This creates a button for search history
+//   var cityHistory = $("<button>");
+//   //Add list class
+//   cityHistory.addClass("list-group-item");
+//   //Add text from user input
+//   cityHistory.text(citySearch);
+
+//   //Append to search bar
+//   $("#searchHistory").append(cityHistory);
+// }
 
 //Function for adding city input to current city div
 
