@@ -43,17 +43,20 @@
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
+                id="city"
               />
               <button
                 class="btn btn-outline-success my-2 my-sm-0"
                 type="submit"
+                id="search"
               >
                 Search
               </button>
             </form>
-            <!--This is the search history. Should be added dynamically-->
+            <!--This is the search history. -->
             <ul class="list-group">
-              <li class="list-group-item">
+              <!--These should be added dynamically-->
+              <!-- <li class="list-group-item">
                 Cras justo odio
               </li>
               <li class="list-group-item">
@@ -67,7 +70,7 @@
               </li>
               <li class="list-group-item">
                 Vestibulum at eros
-              </li>
+              </li> -->
             </ul>
           </nav>
         </aside>
@@ -77,14 +80,15 @@
             <!--This is where the current city's information will be displayed. Should be added dynamically-->
             <div
               class="col-9 border-top border-bottom border-left my-4"
+              id="currentCity"
             >
-              <h3 class="my-3">Redlands</h3>
+              <h3 class="my-3"></h3>
               <p>Temperature:</p>
               <p>Humidity:</p>
               <p>Wind Speed:</p>
               <p>UV Index:</p>
             </div>
-            <div class="col-9">
+            <div class="col-9" id="5Day">
               <!--This is where the 5 day forecasts will display. Should be added dynamically-->
               <h3>5-Day Forecast:</h3>
               <!--This is the card group for the 5 day forecasts. Should be added dynamically-->
@@ -136,13 +140,13 @@
       </div>
     </main>
     <!-- Optional JavaScript -->
-    <script src="assets/script.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -153,5 +157,7 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+
+    <script src="assets/script.js"></script>
   </body>
 </html>
