@@ -55,22 +55,7 @@
             </form>
             <!--This is the search history. -->
             <ul class="list-group" id="searchHistory">
-              <!--These should be added dynamically-->
-              <!-- <li class="list-group-item">
-                Cras justo odio
-              </li>
-              <li class="list-group-item">
-                Dapibus ac facilisis in
-              </li>
-              <li class="list-group-item">
-                Morbi leo risus
-              </li>
-              <li class="list-group-item">
-                Porta ac consectetur ac
-              </li>
-              <li class="list-group-item">
-                Vestibulum at eros
-              </li> -->
+            
             </ul>
           </nav>
         </aside>
@@ -82,57 +67,59 @@
               class="col-9 border-top border-bottom border-left my-4"
               id="currentCity"
             >
-              <!--<h3 class="my-3"></h3>-->
-              <p id="temp">Temperature:</p>
-              <p>Humidity:</p>
-              <p>Wind Speed:</p>
-              <p>UV Index:</p>
+              <h3 class="my-3" id="currentWStats"></h3>
+              <p id="temp"></p>
+              <p id="humidity"></p>
+              <p id="windSpeed"></p>
+              <p id="uvIndex"></p>
             </div>
             <div class="col-9" id="5Day">
               <!--This is where the 5 day forecasts will display. Should be added dynamically-->
               <h3>5-Day Forecast:</h3>
               <!--This is the card group for the 5 day forecasts. Should be added dynamically-->
               <div class="row">
-                <div class="card" style="width: 8rem;">
+                <div class="card text-white bg-primary" style="width: 8rem;">
                   <div class="card-body">
-                    <h6>6/18/20</h6>
-                    <i></i>
-                    <p>Temp:</p>
-                    <p>Humidity:</p>
+                    <h6 class="card-title" id="date1"></h6>
+                    <i class="card-text" id="icon1"></i>
+                    <p class="card-text" id="temp1"></p>
+                    <p class="card-text" id="hum1"></p>
                   </div>
                 </div>
-                <div class="card" style="width: 8rem;">
+                <div class="card text-white bg-primary" style="width: 8rem;">
                   <div class="card-body">
-                    <h6>6/18/20</h6>
-                    <i></i>
-                    <p>Temp:</p>
-                    <p>Humidity:</p>
+                    <h6 class="card-title" id="date2"></h6>
+                    <i class="card-text" id="icon2"></i>
+                    <p class="card-text" id="temp2"></p>
+                    <p class="card-text" id="hum2"></p>
                   </div>
                 </div>
-                <div class="card" style="width: 8rem;">
+                <div class="card text-white bg-primary" style="width: 8rem;">
                   <div class="card-body">
-                    <h6>6/18/20</h6>
-                    <i></i>
-                    <p>Temp:</p>
-                    <p>Humidity:</p>
+                    <h6 class="card-title" id="date3"></h6>
+                    <i class="card-text" id="icon3"></i>
+                    <p class="card-text" id="temp3"></p>
+                    <p class="card-text" id="hum3"></p>
                   </div>
                 </div>
-                <div class="card" style="width: 8rem;">
+                <div class="card text-white bg-primary" style="width: 8rem;">
                   <div class="card-body">
-                    <h6>6/18/20</h6>
-                    <i></i>
-                    <p>Temp:</p>
-                    <p>Humidity:</p>
+                    <h6 class="card-title" id="date4"></h6>
+                    <i class="card-text" id="icon4"></i>
+                    <p class="card-text" id="temp4"></p>
+                    <p class="card-text" id="hum4"></p>
                   </div>
                 </div>
-                <div class="card" style="width: 8rem;">
+                <div class="card text-white bg-primary" style="width: 8rem;">
                   <div class="card-body">
-                    <h6>6/18/20</h6>
-                    <i></i>
-                    <p>Temp:</p>
-                    <p>Humidity:</p>
+                    <h6 class="card-title" id="date5"></h6>
+                    <i class="card-text" id="icon5"></i>
+                    <p class="card-text" id="temp5"></p>
+                    <p class="card-text" id="hum5"></p>
                   </div>
                 </div>
+              </div>
+              
               </div>
             </div>
           </div>
@@ -159,5 +146,6 @@
     ></script>
 
     <script src="assets/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
