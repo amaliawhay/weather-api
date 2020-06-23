@@ -63,7 +63,7 @@ function createSearchHistory(city) {
     var F = ((K - 273.15) * 1.8 + 32).toFixed(0);
     console.log(F);
     //append to temp <p>
-    $("#temp").append(F + "°F");
+    $("#temp").append("Temperature: " + F + "°F");
     console.log("Temperature: " + F + "°F");
 
     //var for humidity
